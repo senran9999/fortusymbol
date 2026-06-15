@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Services | Fortusymbol - Global Sourcing Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Purchasing & Procurement Services
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Strategic sourcing and procurement solutions that reduce costs, improve quality, and streamline your supply chain operations
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Your Trusted Global Sourcing Partner</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        At Fortusymbol, we understand the challenges businesses face in sourcing quality products and services at competitive prices. Drawing on our own experience as a successful jewelry brand with extensive global supply chains, we provide comprehensive purchasing and procurement services to help businesses of all sizes optimize their operations.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We specialize in procuring contracts for others for the purchase of goods and labor contracting services, offering end-to-end solutions from supplier identification to final delivery. Our team of procurement experts works closely with you to understand your specific needs and deliver customized solutions that drive tangible business results.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Whether you're looking to source products from China, negotiate better terms with suppliers, or manage your entire procurement process, we have the expertise, network, and resources to help you succeed.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/26/600/500" alt="Global Procurement & Sourcing" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Procurement Services -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Comprehensive Procurement Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Complete end-to-end procurement services designed to optimize your supply chain and reduce costs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Supplier Sourcing & Vetting -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-search text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Supplier Sourcing & Vetting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Identification and thorough vetting of reliable, high-quality suppliers to meet your specific product requirements.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Extensive supplier database access</li>
+                        <li>• Factory audits & inspections</li>
+                        <li>• Supplier qualification & verification</li>
+                        <li>• Financial stability assessment</li>
+                        <li>• Compliance & certification checks</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: Contract Negotiation & Management -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Contract Negotiation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expert negotiation of favorable terms, pricing, and conditions to maximize your purchasing power and minimize risk.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Price negotiation & optimization</li>
+                        <li>• Contract drafting & review</li>
+                        <li>• Terms & conditions negotiation</li>
+                        <li>• Risk assessment & mitigation</li>
+                        <li>• Contract performance tracking</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: Quality Control & Inspection -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-check-square-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Control & Inspection</h3>
+                    <p class="text-gray-600 mb-4">
+                        Rigorous quality control processes to ensure products meet your specifications and international standards.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Pre-production inspections</li>
+                        <li>• In-process quality checks</li>
+                        <li>• Pre-shipment inspections</li>
+                        <li>• Product testing & certification</li>
+                        <li>• Defect resolution management</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4: Supply Chain Management -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-truck text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Supply Chain Management</h3>
+                    <p class="text-gray-600 mb-4">
+                        End-to-end supply chain management to ensure timely delivery, reduce lead times, and optimize inventory levels.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Order management & tracking</li>
+                        <li>• Logistics coordination</li>
+                        <li>• Inventory optimization</li>
+                        <li>• Lead time reduction</li>
+                        <li>• Supply chain risk management</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5: Labor Contracting Services -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Labor Contracting Services</h3>
+                    <p class="text-gray-600 mb-4">
+                        Procurement of skilled workforce and labor contracting services to support your production and operational needs.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Skilled workforce recruitment</li>
+                        <li>• Labor contract management</li>
+                        <li>• HR & payroll services</li>
+                        <li>• Compliance with labor laws</li>
+                        <li>• Workforce training & development</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6: Procurement Consulting -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Procurement Consulting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic consulting services to help you optimize your procurement processes and improve overall efficiency.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Procurement strategy development</li>
+                        <li>• Process optimization & automation</li>
+                        <li>• Cost reduction analysis</li>
+                        <li>• Supplier relationship management</li>
+                        <li>• Benchmarking & best practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Procurement Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Choose Fortusymbol for Procurement</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    What sets our procurement services apart and delivers exceptional value to our clients
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-diamond text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">First-Hand Industry Experience</h3>
+                            <p class="text-gray-600">
+                                As owners of our own jewelry brand, we have first-hand experience in global sourcing and understand the challenges from a buyer's perspective.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Extensive Supplier Network</h3>
+                            <p class="text-gray-600">
+                                Access to a vast network of verified suppliers across China and Asia, particularly in the jewelry, fashion, and consumer goods industries.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-dollar text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Significant Cost Savings</h3>
+                            <p class="text-gray-600">
+                                Our volume purchasing power and strong supplier relationships allow us to negotiate better prices, typically reducing costs by 15-25%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-shield text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Quality Assurance</h3>
+                            <p class="text-gray-600">
+                                Rigorous quality control processes and on-site inspections ensure that all products meet your exact specifications and standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-cogs text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">End-to-End Solutions</h3>
+                            <p class="text-gray-600">
+                                Complete turnkey services from supplier identification to final delivery, saving you time and resources.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-eye text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Transparent Process</h3>
+                            <p class="text-gray-600">
+                                Full transparency throughout the procurement process with regular updates and detailed reporting.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-exclamation-triangle text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Risk Mitigation</h3>
+                            <p class="text-gray-600">
+                                Proactive risk management to protect your business from supply chain disruptions, quality issues, and compliance risks.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-handshake-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Long-Term Partnership</h3>
+                            <p class="text-gray-600">
+                                We view ourselves as your long-term business partner, committed to your continuous success and growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procurement Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Proven Procurement Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A systematic 7-step process to ensure efficient, cost-effective, and high-quality procurement
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1-2 -->
+                <div class="space-y-8">
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            1
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Needs Assessment</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We understand your product requirements, budget, and timeline.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            2
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Supplier Sourcing</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We identify and shortlist potential suppliers from our network.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 3-4 -->
+                <div class="space-y-8">
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            3
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Evaluation & Audit</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We conduct thorough supplier evaluations and factory audits.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            4
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Negotiation</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We negotiate favorable terms, pricing, and conditions.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 5-6 -->
+                <div class="space-y-8">
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            5
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Order Placement</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We finalize contracts and place orders with selected suppliers.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                            6
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-center">Production Monitoring</h3>
+                        <p class="text-gray-200 text-sm text-center">
+                            We monitor production progress and conduct quality inspections.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 7 -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm h-full flex flex-col justify-center">
+                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mb-4 mx-auto">
+                        7
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-center">Delivery & Follow-Up</h3>
+                    <p class="text-gray-200 text-sm text-center">
+                        We coordinate logistics, ensure timely delivery, and provide post-delivery support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Procurement Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our procurement services have helped businesses reduce costs and improve supply chain efficiency
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/628/600/300" alt="Jewelry Procurement Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Luxury Goods</span>
+                        <h3 class="text-xl font-bold mb-3">Singapore Energy Jewelry Brand</h3>
+                        <p class="text-gray-600 mb-4">
+                            Assisted a Singaporean energy jewelry brand with end-to-end procurement in China. We sourced and vetted manufacturers, negotiated favorable terms, and managed quality control, successfully launching 5 product lines with 100% satisfaction from both B2B parties.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">5 Products Launched</span>
+                            <span class="text-gray-500">100% Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/180/600/300" alt="Manufacturing Procurement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Manufacturing</span>
+                        <h3 class="text-xl font-bold mb-3">Manufacturing Cost Reduction</h3>
+                        <p class="text-gray-600 mb-4">
+                            Implemented strategic procurement solutions for a manufacturing company, optimizing their supply chain and negotiating better terms with suppliers. Our efforts resulted in a 22% reduction in material costs while maintaining product quality standards.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">-22% Material Costs</span>
+                            <span class="text-gray-500">12 Months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section - 修改为直接展示联系方式 -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Optimize Your Procurement?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+                Contact us directly to discuss your procurement needs and get a customized solution for your business
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- 电话 -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-phone text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">Phone</p>
+                        <a href="tel:+8615100288381" class="text-xl font-medium hover:text-secondary transition-colors">+86 15100288381</a>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                        <i class="fa fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">WhatsApp</p>
+                        <a href="https://wa.me/8615100288381" target="_blank" class="text-xl font-medium hover:text-secondary transition-colors">+86 15100288381</a>
+                    </div>
+                </div>
+                
+                <!-- 邮箱 -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-envelope text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">Email</p>
+                        <a href="mailto:bella@qianguyi.com" class="text-xl font-medium hover:text-secondary transition-colors">bella@qianguyi.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

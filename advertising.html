@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising & Marketing | Fortusymbol - Global Business Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Advertising & Marketing
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Data-driven strategies and creative campaigns that build brand awareness, generate qualified leads, and drive measurable sales growth
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Transform Your Brand Presence</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        In today's competitive global marketplace, effective advertising and marketing are essential for business success. At Fortusymbol, we combine creative excellence with data-driven insights to deliver marketing solutions that resonate with your target audience and deliver tangible results.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Whether you're looking to launch a new product, enter a new market, or increase your market share, our team of marketing experts will develop a customized strategy tailored to your specific business goals and budget.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        From brand strategy and digital advertising to content marketing and campaign management, we provide end-to-end marketing services that help businesses of all sizes achieve their growth objectives.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/160/600/500" alt="Marketing Strategy" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Core Marketing Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive marketing solutions designed to meet all your business growth needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Digital Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bullhorn text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Digital Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Targeted online advertising campaigns across all major platforms to reach your ideal customers and drive conversions.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Search Engine Marketing (SEM)</li>
+                        <li>• Social Media Advertising</li>
+                        <li>• Display & Retargeting Ads</li>
+                        <li>• Programmatic Advertising</li>
+                        <li>• Video Advertising</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: Brand Strategy -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Strategy</h3>
+                    <p class="text-gray-600 mb-4">
+                        Build a strong, recognizable brand identity that differentiates you from competitors and connects with customers.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Brand Positioning & Messaging</li>
+                        <li>• Visual Identity Design</li>
+                        <li>• Brand Guidelines Development</li>
+                        <li>• Brand Awareness Campaigns</li>
+                        <li>• Reputation Management</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: Content Marketing -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Marketing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Engaging, valuable content that attracts, educates, and converts your target audience into loyal customers.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Blog Post Creation</li>
+                        <li>• Whitepapers & E-books</li>
+                        <li>• Video Production</li>
+                        <li>• Infographics & Visual Content</li>
+                        <li>• Case Studies & Testimonials</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4: Social Media Marketing -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-share-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Marketing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic social media management to build community, increase engagement, and drive traffic to your business.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Platform Strategy & Management</li>
+                        <li>• Content Calendar Development</li>
+                        <li>• Community Engagement</li>
+                        <li>• Influencer Marketing</li>
+                        <li>• Social Media Analytics</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5: Email Marketing -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-envelope-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Personalized email campaigns that nurture leads, retain customers, and drive repeat business and referrals.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Email List Building</li>
+                        <li>• Campaign Design & Execution</li>
+                        <li>• Automation Workflows</li>
+                        <li>• A/B Testing</li>
+                        <li>• Performance Analysis</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6: Analytics & Reporting -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bar-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Analytics & Reporting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive data analysis and transparent reporting to track performance and optimize marketing ROI.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Custom Dashboards</li>
+                        <li>• KPI Tracking & Measurement</li>
+                        <li>• Conversion Rate Optimization</li>
+                        <li>• ROI Analysis</li>
+                        <li>• Continuous Improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Marketing Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Choose Fortusymbol for Marketing</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    What sets our marketing services apart and delivers exceptional results for our clients
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Market Expertise</h3>
+                            <p class="text-gray-600">
+                                Deep understanding of international markets and cultural nuances, enabling us to create campaigns that resonate globally.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-database text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Data-Driven Approach</h3>
+                            <p class="text-gray-600">
+                                All our strategies are based on thorough market research and data analysis, ensuring maximum ROI for your marketing investment.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-cogs text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Integrated Solutions</h3>
+                            <p class="text-gray-600">
+                                Seamless integration with our procurement and trade services, providing a complete end-to-end business growth solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Experienced Team</h3>
+                            <p class="text-gray-600">
+                                Our marketing professionals bring decades of combined experience across diverse industries and global markets.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-eye text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Transparent Communication</h3>
+                            <p class="text-gray-600">
+                                Regular updates and detailed reports keep you informed about campaign performance and progress towards your goals.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-line-chart text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Results-Oriented</h3>
+                            <p class="text-gray-600">
+                                We focus on delivering measurable business outcomes, not just vanity metrics, to ensure your marketing drives real growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Service Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Marketing Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A proven, systematic approach to delivering successful marketing campaigns
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phase 1 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Discovery & Research</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Business goals & objectives analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Target audience research & profiling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Competitive landscape analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Current marketing performance audit</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Market trends & opportunities</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Strategy & Planning</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Marketing strategy development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Channel selection & allocation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Budget planning & forecasting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Content strategy & calendar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>KPI setting & measurement plan</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Execution & Optimization</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Creative asset development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Campaign launch & management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Real-time performance monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Data-driven optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Reporting & strategic refinement</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Marketing Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our marketing strategies have helped businesses achieve remarkable growth
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/48/600/300" alt="Amazon Sales Growth" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">E-Commerce Marketing</span>
+                        <h3 class="text-xl font-bold mb-3">Amazon Store Revenue Doubling</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built and optimized a complete Amazon storefront for a consumer goods brand, implementing targeted advertising strategies, product listing optimization, and review management that resulted in doubling their sales within 6 months.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">+100% Sales Growth</span>
+                            <span class="text-gray-500">6 Months</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/1060/600/300" alt="Brand Launch Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Brand Launch</span>
+                        <h3 class="text-xl font-bold mb-3">Successful Global Brand Launch</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed and executed a comprehensive global marketing strategy for a new jewelry brand, including brand positioning, social media marketing, influencer partnerships, and digital advertising that generated over 50,000 customers in the first year.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">50,000+ Customers</span>
+                            <span class="text-gray-500">12 Months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Boost Your Marketing Results?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+                Contact us today for a free marketing consultation and let us create a customized strategy to grow your business.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-medium text-lg transition-all transform hover:scale-105">
+                Get Free Marketing Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

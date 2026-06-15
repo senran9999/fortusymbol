@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Information Services | Fortusymbol - Global Market Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Business Information Services
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Actionable market intelligence and data-driven insights to help you make informed business decisions and seize global opportunities
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Knowledge is Power in Global Business</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        In today's rapidly changing global marketplace, having access to accurate, timely, and relevant business information is critical for success. Fortusymbol provides comprehensive business information services via our website, empowering businesses with the insights they need to make strategic decisions.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Whether you're looking to enter a new market, understand your competitors, identify potential partners, or stay updated on industry trends and regulations, our business information solutions provide you with the knowledge and confidence to navigate complex international markets.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Our team of experienced analysts and researchers combines primary and secondary research methods to deliver high-quality, actionable intelligence tailored to your specific business needs.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/548/600/500" alt="Business Intelligence & Data Analysis" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Information Services -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Business Information Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive information products and services designed to address all your business intelligence needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Market Research Reports -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Market Research Reports</h3>
+                    <p class="text-gray-600 mb-4">
+                        In-depth analysis of global and regional markets, including size, growth trends, key players, and future opportunities.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Industry analysis & forecasts</li>
+                        <li>• Market size & growth projections</li>
+                        <li>• Competitive landscape analysis</li>
+                        <li>• Consumer behavior studies</li>
+                        <li>• Emerging trends identification</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: Custom Data Solutions -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-database text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Data Solutions</h3>
+                    <p class="text-gray-600 mb-4">
+                        Tailored research projects and data analysis to answer your specific business questions and address unique challenges.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Customized research projects</li>
+                        <li>• Data visualization & dashboards</li>
+                        <li>• Trend forecasting & modeling</li>
+                        <li>• Customer satisfaction surveys</li>
+                        <li>• Product testing & feedback</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: Verified Business Directories -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-address-book-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Verified Business Directories</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive databases of verified suppliers, buyers, distributors, and business partners across industries and regions.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Supplier & manufacturer directories</li>
+                        <li>• Buyer & distributor databases</li>
+                        <li>• Company profiles & backgrounds</li>
+                        <li>• Contact information verification</li>
+                        <li>• Industry-specific directories</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4: Regulatory & Compliance Information -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gavel text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Regulatory & Compliance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Up-to-date information on import/export regulations, trade policies, and compliance requirements for global markets.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Import/export regulations updates</li>
+                        <li>• Tariff & duty information</li>
+                        <li>• Product certification requirements</li>
+                        <li>• Trade agreement details</li>
+                        <li>• Compliance guidelines & checklists</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5: Market Entry Guides -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-map-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Market Entry Guides</h3>
+                    <p class="text-gray-600 mb-4">
+                        Step-by-step guides and practical advice for entering new international markets successfully.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Country-specific entry strategies</li>
+                        <li>• Local business culture insights</li>
+                        <li>• Distribution channel analysis</li>
+                        <li>• Pricing & positioning strategies</li>
+                        <li>• Risk assessment & mitigation</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6: Competitor Intelligence -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-binoculars text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitor Intelligence</h3>
+                    <p class="text-gray-600 mb-4">
+                        Detailed analysis of your competitors' strategies, strengths, weaknesses, and market positioning.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Competitor profiling & analysis</li>
+                        <li>• Product & pricing comparisons</li>
+                        <li>• Marketing strategy analysis</li>
+                        <li>• Sales & distribution channels</li>
+                        <li>• SWOT analysis & benchmarking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Information Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Our Business Information Stands Out</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Quality, accuracy, and actionability are the hallmarks of our business information services
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-check-circle text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Verified & Accurate Data</h3>
+                            <p class="text-gray-600">
+                                All our information is rigorously verified through multiple sources to ensure accuracy and reliability.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-clock-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Real-Time Updates</h3>
+                            <p class="text-gray-600">
+                                Our databases and reports are continuously updated to reflect the latest market developments and changes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Coverage</h3>
+                            <p class="text-gray-600">
+                                Comprehensive coverage of over 190 countries and territories across all major industry sectors.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Expert Analysis</h3>
+                            <p class="text-gray-600">
+                                Our team of industry experts provides insightful analysis and interpretation of complex market data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-lightbulb-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Actionable Insights</h3>
+                            <p class="text-gray-600">
+                                We don't just provide data—we deliver actionable recommendations that drive business results.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-cogs text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Customized Solutions</h3>
+                            <p class="text-gray-600">
+                                We tailor our information services to meet your specific business needs and objectives.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-shield text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Confidentiality Assured</h3>
+                            <p class="text-gray-600">
+                                All client information and research findings are treated with the utmost confidentiality and security.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-dollar text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Cost-Effective</h3>
+                            <p class="text-gray-600">
+                                Our information services provide exceptional value, helping you avoid costly mistakes and identify profitable opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Service Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Information Delivery Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A systematic approach to delivering high-quality business information that meets your exact requirements
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Needs Assessment</h3>
+                    <p class="text-gray-200 text-sm">
+                        We work closely with you to understand your specific information needs and business objectives.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Research & Data Collection</h3>
+                    <p class="text-gray-200 text-sm">
+                        Our team conducts comprehensive research using both primary and secondary data sources.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Analysis & Interpretation</h3>
+                    <p class="text-gray-200 text-sm">
+                        Our experts analyze the data and transform it into meaningful insights and actionable recommendations.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Delivery & Support</h3>
+                    <p class="text-gray-200 text-sm">
+                        We deliver the final report and provide ongoing support to help you implement the insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Business Information Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our business information services have helped companies make better decisions and achieve their goals
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/548/600/300" alt="Market Research Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Market Strategy</span>
+                        <h3 class="text-xl font-bold mb-3">New Market Entry Success</h3>
+                        <p class="text-gray-600 mb-4">
+                            Conducted comprehensive market research and provided strategic direction for a manufacturing company looking to enter the Southeast Asian market. Our insights helped them identify 3 high-potential market opportunities and develop a successful entry strategy.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">3 New Markets Entered</span>
+                            <span class="text-gray-500">8 Months</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/237/600/300" alt="Competitor Intelligence" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Competitor Analysis</span>
+                        <h3 class="text-xl font-bold mb-3">Competitive Advantage Gained</h3>
+                        <p class="text-gray-600 mb-4">
+                            Provided detailed competitor intelligence for a consumer electronics brand, including product analysis, pricing strategies, and marketing tactics. Our insights helped them refine their product offerings and marketing campaigns, resulting in a 25% increase in market share.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">+25% Market Share</span>
+                            <span class="text-gray-500">12 Months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Make Informed Business Decisions?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+                Contact us today to request a free sample report or discuss how our business information services can help your business grow.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-medium text-lg transition-all transform hover:scale-105">
+                Request Free Sample Report
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

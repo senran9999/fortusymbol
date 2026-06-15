@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition Organization | Fortusymbol - Global Event Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Exhibition Organization
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                End-to-end exhibition and event management services that create impactful brand experiences and drive meaningful business connections
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Transform Your Brand Presence Through Exhibitions</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Exhibitions remain one of the most powerful ways to showcase your products, connect with potential customers, and establish your brand as an industry leader. Fortusymbol specializes in organizing professional exhibitions for commercial and advertising purposes, helping businesses maximize their return on investment from trade shows and events.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Whether you're looking to participate in an international trade show, host your own industry exhibition, or create a memorable brand activation event, our experienced team will handle every aspect of the planning and execution process.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        From concept development and booth design to on-site management and post-event follow-up, we provide comprehensive exhibition services that deliver measurable results for your business.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/42/600/500" alt="Professional Exhibition Organization" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Exhibition Services -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Comprehensive Exhibition Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Complete end-to-end solutions for all your exhibition and event needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Trade Show Participation -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-globe text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">International Trade Shows</h3>
+                    <p class="text-gray-600 mb-4">
+                        Full-service management for your participation in major international trade shows and exhibitions worldwide.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Booth space reservation & negotiation</li>
+                        <li>• Travel & accommodation arrangements</li>
+                        <li>• Visa & logistics assistance</li>
+                        <li>• On-site support & representation</li>
+                        <li>• Lead capture & follow-up systems</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: Booth Design & Construction -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paint-brush text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Booth Design & Build</h3>
+                    <p class="text-gray-600 mb-4">
+                        Custom and modular booth designs that effectively showcase your brand and products to attract visitors.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Custom booth design & 3D rendering</li>
+                        <li>• Modular & portable display solutions</li>
+                        <li>• Branding & graphic design</li>
+                        <li>• Booth construction & installation</li>
+                        <li>• Dismantling & storage services</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: Exhibition Marketing -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bullhorn text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Exhibition Marketing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic pre-event, on-site, and post-event marketing to maximize attendance and lead generation.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Pre-event promotion campaigns</li>
+                        <li>• Invitation design & distribution</li>
+                        <li>• On-site engagement activities</li>
+                        <li>• Product demonstrations & launches</li>
+                        <li>• Post-event follow-up campaigns</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4: Conference & Seminar Management -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-microphone text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Conferences & Seminars</h3>
+                    <p class="text-gray-600 mb-4">
+                        Professional organization of conferences, seminars, workshops, and keynote speaking engagements.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Agenda planning & speaker management</li>
+                        <li>• Venue selection & setup</li>
+                        <li>• Registration & ticketing systems</li>
+                        <li>• Audio-visual equipment</li>
+                        <li>• Catering & hospitality services</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5: Virtual & Hybrid Events -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-desktop text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Virtual & Hybrid Events</h3>
+                    <p class="text-gray-600 mb-4">
+                        Innovative virtual and hybrid event solutions that extend your reach to global audiences.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Virtual exhibition platforms</li>
+                        <li>• Live streaming & webinars</li>
+                        <li>• Digital networking features</li>
+                        <li>• On-demand content access</li>
+                        <li>• Hybrid event integration</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6: Event Logistics & Support -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-truck text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Logistics & Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive logistics and support services to ensure smooth and successful event execution.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Freight & shipping services</li>
+                        <li>• Customs clearance assistance</li>
+                        <li>• On-site staff & interpreters</li>
+                        <li>• Security & safety management</li>
+                        <li>• Post-event evaluation & reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Exhibition Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Choose Fortusymbol for Exhibitions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    What sets our exhibition services apart and ensures your event success
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Exhibition Network</h3>
+                            <p class="text-gray-600">
+                                Extensive network of partners and venues in major exhibition hubs worldwide, ensuring seamless execution anywhere.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-star text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Creative Excellence</h3>
+                            <p class="text-gray-600">
+                                Award-winning design team that creates innovative, eye-catching booths and experiences that stand out from the competition.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-cogs text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Turnkey Solutions</h3>
+                            <p class="text-gray-600">
+                                Complete end-to-end services from initial concept to post-event analysis, saving you time and resources.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-dollar text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Cost Efficiency</h3>
+                            <p class="text-gray-600">
+                                Strong relationships with suppliers and venues allow us to negotiate competitive rates and maximize your budget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Experienced Team</h3>
+                            <p class="text-gray-600">
+                                Seasoned event professionals with decades of combined experience organizing successful exhibitions worldwide.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-check-circle text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Attention to Detail</h3>
+                            <p class="text-gray-600">
+                                Meticulous planning and execution ensure every aspect of your exhibition is flawless and professional.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-line-chart text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Results-Oriented</h3>
+                            <p class="text-gray-600">
+                                We focus on delivering measurable business outcomes, from lead generation to increased sales and brand awareness.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-clock-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                            <p class="text-gray-600">
+                                Dedicated project manager and round-the-clock support to address any issues that may arise during your event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Exhibition Management Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A proven 6-step process to ensure your exhibition is a resounding success
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white/20"></div>
+                
+                <div class="space-y-12 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Discovery & Planning</h3>
+                            <p class="text-gray-200">
+                                We understand your goals, target audience, and budget, then develop a comprehensive exhibition strategy and timeline.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            1
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            2
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Design & Concept</h3>
+                            <p class="text-gray-200">
+                                Our creative team develops custom booth designs and event concepts that align with your brand and objectives.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Pre-Event Preparation</h3>
+                            <p class="text-gray-200">
+                                We handle all logistics including venue booking, vendor coordination, marketing, and attendee registration.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            3
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            4
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Booth Construction</h3>
+                            <p class="text-gray-200">
+                                Our skilled team constructs and installs your booth, ensuring everything is perfect before the event opens.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">On-Site Management</h3>
+                            <p class="text-gray-200">
+                                We provide full on-site support during the event, managing all operations and ensuring everything runs smoothly.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            5
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 6 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            6
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Post-Event Follow-Up</h3>
+                            <p class="text-gray-200">
+                                We handle dismantling, logistics, and provide a comprehensive report with results analysis and recommendations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Exhibition Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our exhibition services have helped businesses create impactful brand experiences and drive growth
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/628/600/300" alt="Jewelry Exhibition Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Luxury Goods</span>
+                        <h3 class="text-xl font-bold mb-3">Hong Kong Jewelry Show Participation</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organized complete participation for a jewelry brand at the Hong Kong International Jewelry Show, including custom booth design, logistics, and on-site management. The event generated 80+ qualified leads and secured $500,000 in immediate orders and follow-up business.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">$500K in Orders</span>
+                            <span class="text-gray-500">3-Day Event</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/26/600/300" alt="Industry Exhibition Organization" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Manufacturing</span>
+                        <h3 class="text-xl font-bold mb-3">Regional Industry Trade Show</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organized a regional industry trade show for a manufacturing association, attracting 30+ exhibitors and 1,200+ professional visitors from 8 countries. The event facilitated over 300 business meetings and resulted in multiple new partnership agreements.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">1,200+ Visitors</span>
+                            <span class="text-gray-500">8 Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Create an Impactful Exhibition?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+                Contact us today for a free exhibition consultation and let our experts create a customized plan for your next event.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-medium text-lg transition-all transform hover:scale-105">
+                Get Free Exhibition Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

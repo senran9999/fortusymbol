@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import & Export Agencies | Fortusymbol - Global Trade Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Goods Import-Export Agencies
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Comprehensive import-export agency services that simplify global trade, ensure regulatory compliance, and deliver your goods safely and on time
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Simplify Your Global Trade Operations</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Navigating the complexities of international trade can be challenging, with ever-changing regulations, customs procedures, and logistics requirements. Fortusymbol provides professional goods import-export agency services to help businesses of all sizes streamline their global trade operations.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Drawing on our own experience as an international jewelry brand with extensive cross-border trade experience, we understand the unique challenges businesses face when importing and exporting goods. Our team of trade experts handles every aspect of the process, from documentation and customs clearance to logistics and delivery.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Whether you're importing raw materials from China, exporting finished products to global markets, or need assistance with trade compliance, we have the expertise and network to make your international trade operations smooth and efficient.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/14/600/500" alt="International Shipping & Logistics" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Import-Export Services -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Comprehensive Trade Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Complete end-to-end import-export services designed to handle all your global trade needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Customs Clearance -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customs Clearance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expert handling of all customs clearance procedures to ensure your goods pass through customs quickly and without delays.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Import & export declaration</li>
+                        <li>• Customs documentation preparation</li>
+                        <li>• Duty & tax calculation</li>
+                        <li>• Customs inspection coordination</li>
+                        <li>• Classification & valuation assistance</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2: International Logistics -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-ship text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">International Logistics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive logistics solutions including sea, air, and land transportation to deliver your goods worldwide.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Ocean freight (FCL & LCL)</li>
+                        <li>• Air freight services</li>
+                        <li>• Land transportation</li>
+                        <li>• Multimodal transport</li>
+                        <li>• Door-to-door delivery</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3: Trade Compliance -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gavel text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trade Compliance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Ensure your international trade operations comply with all applicable laws, regulations, and trade agreements.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Regulatory compliance consulting</li>
+                        <li>• Export control & sanctions screening</li>
+                        <li>• Product certification assistance</li>
+                        <li>• Trade agreement utilization</li>
+                        <li>• Compliance audit & training</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4: Documentation & Licensing -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Documentation & Licensing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Preparation and management of all required trade documentation and licenses for international shipments.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Commercial invoices & packing lists</li>
+                        <li>• Bills of lading & airway bills</li>
+                        <li>• Certificates of origin</li>
+                        <li>• Import & export licenses</li>
+                        <li>• Insurance documentation</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5: Warehousing & Distribution -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-warehouse text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Warehousing & Distribution</h3>
+                    <p class="text-gray-600 mb-4">
+                        Secure warehousing and efficient distribution services to manage your inventory and fulfill orders globally.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Bonded & non-bonded warehousing</li>
+                        <li>• Inventory management</li>
+                        <li>• Order fulfillment</li>
+                        <li>• Pick & pack services</li>
+                        <li>• Last-mile delivery</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6: Trade Consulting -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trade Consulting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic consulting services to help you optimize your global trade operations and minimize costs and risks.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Supply chain optimization</li>
+                        <li>• Cost reduction analysis</li>
+                        <li>• Risk assessment & mitigation</li>
+                        <li>• Market entry strategy</li>
+                        <li>• Trade finance assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Import-Export Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Choose Fortusymbol for Import-Export</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    What sets our import-export services apart and ensures your global trade success
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Network & Partnerships</h3>
+                            <p class="text-gray-600">
+                                Extensive network of agents, carriers, and customs brokers in over 100 countries ensures seamless operations worldwide.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-clock-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Fast Clearance Times</h3>
+                            <p class="text-gray-600">
+                                Our expertise and relationships with customs authorities allow us to achieve faster clearance times and minimize delays.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-dollar text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Cost Optimization</h3>
+                            <p class="text-gray-600">
+                                We negotiate competitive rates with carriers and identify cost-saving opportunities to reduce your overall trade expenses.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-shield text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Risk Mitigation</h3>
+                            <p class="text-gray-600">
+                                Proactive risk management to protect your business from customs penalties, shipment delays, and other trade-related risks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Experienced Trade Team</h3>
+                            <p class="text-gray-600">
+                                Our team of certified trade professionals has decades of combined experience in international trade and customs regulations.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-eye text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Real-Time Tracking</h3>
+                            <p class="text-gray-600">
+                                Advanced tracking systems allow you to monitor your shipments in real-time and stay informed about their status.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-cogs text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">End-to-End Solutions</h3>
+                            <p class="text-gray-600">
+                                Complete turnkey services from documentation and customs clearance to final delivery, saving you time and resources.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-handshake-o text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Personalized Service</h3>
+                            <p class="text-gray-600">
+                                Dedicated account manager who understands your business needs and provides personalized support throughout the process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Import-Export Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Import-Export Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A streamlined 6-step process to ensure your goods move smoothly across borders
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phase 1 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Consultation & Planning</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Understand your shipment requirements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Provide cost & timeline estimates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Develop customized shipping plan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Identify regulatory requirements</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Documentation & Preparation</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Prepare all required documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Obtain necessary licenses & permits</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Arrange cargo insurance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Coordinate with suppliers</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Transportation & Customs</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Arrange international transportation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>File customs declarations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Handle customs inspections</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Pay duties & taxes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <!-- Phase 4 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Clearance & Delivery</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Complete customs clearance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Arrange local transportation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Deliver to your facility</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Provide delivery confirmation</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 5 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        5
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Warehousing (Optional)</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Store goods in secure facilities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Manage inventory levels</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Fulfill customer orders</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Provide inventory reports</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Phase 6 -->
+                <div class="bg-white/10 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">
+                        6
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Post-Shipment Support</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Provide final documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Handle any post-shipment issues</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Process insurance claims if needed</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mr-3 mt-1"></i>
+                            <span>Continuous process improvement</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Import-Export Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our import-export services have helped businesses streamline their global trade operations
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/628/600/300" alt="Jewelry Import Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Luxury Goods</span>
+                        <h3 class="text-xl font-bold mb-3">Singapore Jewelry Brand Import</h3>
+                        <p class="text-gray-600 mb-4">
+                            Managed complete import-export operations for the Singaporean energy jewelry brand we previously assisted with procurement. We handled all customs clearance, documentation, and logistics, ensuring their 5 product lines were delivered on time and in perfect condition, with zero customs issues.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">0 Customs Issues</span>
+                            <span class="text-gray-500">On-Time Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/26/600/300" alt="Manufacturing Export Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Manufacturing</span>
+                        <h3 class="text-xl font-bold mb-3">Manufacturing Export Optimization</h3>
+                        <p class="text-gray-600 mb-4">
+                            Optimized the export operations for a manufacturing company shipping products to 12 countries. We streamlined their documentation process, negotiated better shipping rates, and implemented a real-time tracking system, reducing their overall logistics costs by 18% and cutting average delivery times by 2 days.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">-18% Logistics Costs</span>
+                            <span class="text-gray-500">-2 Days Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section - 直接展示联系方式 -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Simplify Your Global Trade?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+                Contact us directly to discuss your import-export needs and get a customized solution for your business
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- 电话 -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-phone text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">Phone</p>
+                        <a href="tel:+8615100288381" class="text-xl font-medium hover:text-secondary transition-colors">+86 15100288381</a>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                        <i class="fa fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">WhatsApp</p>
+                        <a href="https://wa.me/8615100288381" target="_blank" class="text-xl font-medium hover:text-secondary transition-colors">+86 15100288381</a>
+                    </div>
+                </div>
+                
+                <!-- 邮箱 -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-envelope text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm text-gray-300">Email</p>
+                        <a href="mailto:bella@qianguyi.com" class="text-xl font-medium hover:text-secondary transition-colors">bella@qianguyi.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

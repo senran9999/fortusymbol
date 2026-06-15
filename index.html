@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortusymbol | Empowering Global Business Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-[clamp(2rem,5vw,4rem)] font-bold leading-tight text-shadow mb-6">
+                        Empowering Your <span class="text-secondary">Global Business</span> Growth
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg">
+                        We combine cutting-edge digital advertising, strategic procurement, and seamless import-export services to accelerate your international success.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-md font-medium text-center transition-all transform hover:scale-105">
+                            Get Free Consultation
+                        </a>
+                        <a href="#services" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-md font-medium text-center transition-all">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/28/600/400" alt="Global Business Growth" class="rounded-lg shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Need (Services) Section -->
+    <section id="services" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">What You Need</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive end-to-end solutions designed to meet all your business growth and international expansion needs.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bullhorn text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advertising and Marketing</h3>
+                    <p class="text-gray-600">
+                        Strategic marketing campaigns that build brand awareness, generate leads, and drive sales growth across multiple channels.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-globe text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Online Advertising</h3>
+                    <p class="text-gray-600">
+                        Targeted online advertising on computer networks including search engines, social media platforms, and display networks.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-database text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Business Information</h3>
+                    <p class="text-gray-600">
+                        Providing valuable business information via websites including market research, industry analysis, and competitor intelligence.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Exhibition Organization</h3>
+                    <p class="text-gray-600">
+                        Professional organization of exhibitions for commercial or advertising purposes, from planning to execution.
+                    </p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-handshake-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Procurement Services</h3>
+                    <p class="text-gray-600">
+                        Purchasing and procurement services including procuring contracts for others for goods and labor contracting services.
+                    </p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-ship text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Import-Export Agencies</h3>
+                    <p class="text-gray-600">
+                        Comprehensive goods import-export agency services including customs clearance, logistics, and regulatory compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/104/600/500" alt="About Fortusymbol" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">About Fortusymbol</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Fortusymbol is a dynamic company operating in two distinct but complementary business sectors, bringing unique value to our clients worldwide.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                <i class="fa fa-diamond text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Luxury Jewelry Retail</h3>
+                                <p class="text-gray-600">
+                                    We operate our own jewelry stores featuring the exclusive Fortusymbol brand, offering exquisite craftsmanship and timeless designs to discerning customers.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="fa fa-line-chart text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Business Growth Solutions</h3>
+                                <p class="text-gray-600">
+                                    We empower businesses to achieve sustainable growth through our comprehensive range of advertising, marketing, procurement, and international trade services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Advantages Section -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Our Advantages</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    What sets us apart and makes us the preferred partner for businesses worldwide.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Advantage 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-globe text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Global Network</h3>
+                    <p class="text-gray-600">
+                        Extensive network spanning Asia, Europe, North America, and beyond, connecting you to global markets.
+                    </p>
+                </div>
+                
+                <!-- Advantage 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-cogs text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Integrated Solutions</h3>
+                    <p class="text-gray-600">
+                        One-stop-shop for all your business needs, from marketing and advertising to procurement and trade.
+                    </p>
+                </div>
+                
+                <!-- Advantage 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-users text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Team</h3>
+                    <p class="text-gray-600">
+                        Seasoned professionals with decades of combined experience in international business and marketing.
+                    </p>
+                </div>
+                
+                <!-- Advantage 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-trophy text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                    <p class="text-gray-600">
+                        Track record of delivering measurable ROI and sustainable growth for our clients worldwide.
+                    </p>
+                </div>
+                
+                <!-- Advantage 5 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-shield text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reliability & Trust</h3>
+                    <p class="text-gray-600">
+                        Committed to the highest standards of integrity, transparency, and professional service.
+                    </p>
+                </div>
+                
+                <!-- Advantage 6 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-lightbulb-o text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovative Approach</h3>
+                    <p class="text-gray-600">
+                        Leveraging cutting-edge technology and creative strategies to stay ahead of market trends.
+                    </p>
+                </div>
+                
+                <!-- Advantage 7 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-dollar text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cost Efficiency</h3>
+                    <p class="text-gray-600">
+                        Optimized processes and global partnerships that deliver exceptional value for your investment.
+                    </p>
+                </div>
+                
+                <!-- Advantage 8 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa fa-headphones text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">
+                        Dedicated client support team available around the clock to address your needs and concerns.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how we've helped businesses like yours achieve remarkable growth and success.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Case 1: Singapore Energy Jewelry Brand Procurement -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/628/600/400" alt="Jewelry Procurement Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Procurement & Sourcing</span>
+                        <h3 class="text-xl font-bold mb-3">Singapore Energy Jewelry Brand</h3>
+                        <p class="text-gray-600 mb-4">
+                            Assisted a Singaporean energy jewelry brand with end-to-end procurement in China, successfully launching 5 product lines with 100% satisfaction from both B2B parties.
+                        </p>
+                        <div class="text-right">
+                            <span class="text-secondary font-semibold">5 Products Launched</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2: Amazon Store Creation & Sales Growth -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/48/600/400" alt="Amazon Sales Growth" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">E-Commerce & Marketing</span>
+                        <h3 class="text-xl font-bold mb-3">Amazon Store Revenue Doubling</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built and optimized a complete Amazon storefront for a consumer goods brand, implementing targeted advertising strategies that resulted in doubling their sales within 6 months.
+                        </p>
+                        <div class="text-right">
+                            <span class="text-secondary font-semibold">+100% Sales Growth</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 3: Market Research & Strategic Planning -->
+                <div class="bg-light rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/548/600/400" alt="Market Research Success" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">Business Consulting</span>
+                        <h3 class="text-xl font-bold mb-3">Market Entry Strategy Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            Conducted comprehensive market research and provided strategic direction for a manufacturing company, opening up new market opportunities and expanding their business horizons.
+                        </p>
+                        <div class="text-right">
+                            <span class="text-secondary font-semibold">3 New Market Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section id="process" class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Service Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A streamlined, client-focused approach designed to deliver exceptional results efficiently.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white/20"></div>
+                
+                <div class="space-y-12 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Initial Consultation</h3>
+                            <p class="text-gray-200">
+                                We begin with a detailed discussion to understand your business goals, challenges, and specific requirements.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            1
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            2
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Strategy Development</h3>
+                            <p class="text-gray-200">
+                                Our expert team creates a customized strategy tailored to your unique business needs and objectives.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Implementation</h3>
+                            <p class="text-gray-200">
+                                We execute the strategy with precision, keeping you informed at every step of the process.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            3
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            4
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Monitoring & Optimization</h3>
+                            <p class="text-gray-200">
+                                We continuously monitor performance and make data-driven optimizations to maximize results.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Reporting & Analysis</h3>
+                            <p class="text-gray-200">
+                                Detailed reports and analysis to track progress, measure ROI, and identify further opportunities.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            5
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 6 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            6
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Ongoing Support</h3>
+                            <p class="text-gray-200">
+                                We provide continuous support and partnership to ensure your long-term business success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Contact Us</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Ready to take your business to the next level? Get in touch with our team today.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name</label>
+                                <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interest</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option value="">Select a service</option>
+                                    <option value="advertising">Advertising and Marketing</option>
+                                    <option value="online">Online Advertising</option>
+                                    <option value="information">Business Information</option>
+                                    <option value="exhibition">Exhibition Organization</option>
+                                    <option value="procurement">Procurement Services</option>
+                                    <option value="import">Import-Export Agencies</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-md transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p class="text-gray-600">Building D, High-tech Industrial Park, Jingxiu District, Baoding City, Hebei Province, China</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600">+86 15100288381</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-whatsapp text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">WhatsApp</h4>
+                                    <p class="text-gray-600">+86 15100288381</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fa fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">bella@qianguyi.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary rounded-lg shadow-lg p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+                        <p class="mb-6">
+                            Contact us today for a free consultation and let us help you achieve your business goals.
+                        </p>
+                        <a href="https://wa.me/8615100288381" target="_blank" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-md transition-colors w-full">
+                            <i class="fa fa-whatsapp mr-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission (prevent default for demo)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

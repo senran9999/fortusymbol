@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Advertising | Fortusymbol - Global Digital Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F3460',
+                        secondary: '#E94560',
+                        accent: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">Fortu<span class="text-secondary">symbol</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    <a href="index.html#services" class="text-primary font-bold px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                    <a href="index.html#cases" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Cases</a>
+                    <a href="index.html#process" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="index.html#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="index.html#services" class="block px-3 py-2 text-primary font-bold">Services</a>
+                <a href="index.html#cases" class="block px-3 py-2 text-gray-700 hover:text-primary">Cases</a>
+                <a href="index.html#process" class="block px-3 py-2 text-gray-700 hover:text-primary">Process</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md text-center mt-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-tight text-shadow mb-6">
+                Online Advertising on Computer Networks
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Targeted, data-driven advertising across global digital networks to reach your ideal customers and maximize your ROI
+            </p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-6">Reach Your Audience Where They Are</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        In the digital age, your customers spend most of their time online. Fortusymbol specializes in strategic online advertising across computer networks, helping you connect with potential customers at the right moment, on the right platform, and with the right message.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our team of certified advertising experts leverages advanced targeting technologies, real-time bidding systems, and data analytics to create highly effective campaigns that drive qualified traffic, generate leads, and increase sales for your business.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Whether you're targeting local customers or expanding globally, we have the expertise and tools to deliver measurable results across all major digital advertising platforms.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/id/180/600/500" alt="Digital Advertising Network" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Advertising Platforms -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Comprehensive Advertising Platforms</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We manage advertising campaigns across all major digital networks to ensure maximum reach and engagement
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Platform 1: Search Engine Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-search text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Search Engine Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Capture high-intent customers actively searching for your products or services on the world's leading search engines.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Google Ads (Search, Display, Shopping)</li>
+                        <li>• Bing Ads</li>
+                        <li>• Baidu Advertising</li>
+                        <li>• Yandex Direct</li>
+                        <li>• Keyword research & optimization</li>
+                    </ul>
+                </div>
+                
+                <!-- Platform 2: Social Media Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-thumbs-up text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Build brand awareness and drive engagement through targeted advertising on popular social media platforms.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Facebook & Instagram Ads</li>
+                        <li>• LinkedIn Advertising</li>
+                        <li>• Twitter/X Ads</li>
+                        <li>• TikTok Advertising</li>
+                        <li>• Pinterest & Snapchat Ads</li>
+                    </ul>
+                </div>
+                
+                <!-- Platform 3: Display & Retargeting -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-desktop text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Display & Retargeting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Reach customers across millions of websites and bring back visitors who showed interest in your business.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Banner advertising</li>
+                        <li>• Native advertising</li>
+                        <li>• Remarketing campaigns</li>
+                        <li>• Contextual targeting</li>
+                        <li>• Google Display Network</li>
+                    </ul>
+                </div>
+                
+                <!-- Platform 4: Video Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-play-circle text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Video Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Engage your audience with compelling video content on the world's largest video platforms.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• YouTube Advertising</li>
+                        <li>• Vimeo Ads</li>
+                        <li>• Connected TV (CTV) advertising</li>
+                        <li>• In-stream & in-feed video ads</li>
+                        <li>• Video production services</li>
+                    </ul>
+                </div>
+                
+                <!-- Platform 5: Mobile Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-mobile text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Reach customers on their smartphones and tablets with location-based and in-app advertising.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• In-app advertising</li>
+                        <li>• Mobile web advertising</li>
+                        <li>• Location-based targeting</li>
+                        <li>• SMS marketing</li>
+                        <li>• App install campaigns</li>
+                    </ul>
+                </div>
+                
+                <!-- Platform 6: Programmatic Advertising -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-cogs text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Programmatic Advertising</h3>
+                    <p class="text-gray-600 mb-4">
+                        Automated real-time bidding to deliver highly targeted ads at scale across premium inventory.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• Real-time bidding (RTB)</li>
+                        <li>• Demand-side platforms (DSP)</li>
+                        <li>• Private marketplaces (PMP)</li>
+                        <li>• Audience segmentation</li>
+                        <li>• Cross-device targeting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Advertising Advantages -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Why Choose Fortusymbol for Online Advertising</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Advanced technology and expert strategy that delivers superior advertising performance
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-bullseye text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Precision Targeting</h3>
+                            <p class="text-gray-600">
+                                AI-driven audience targeting based on demographics, interests, behavior, and intent to reach only your ideal customers.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-line-chart text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Real-Time Optimization</h3>
+                            <p class="text-gray-600">
+                                Continuous monitoring and optimization of campaigns in real-time to maximize performance and minimize waste.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-globe text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Global Reach</h3>
+                            <p class="text-gray-600">
+                                Ability to target audiences in over 190 countries with localized campaigns that respect cultural differences.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-shield text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Fraud Protection</h3>
+                            <p class="text-gray-600">
+                                Advanced fraud detection systems to ensure your advertising budget is spent on real, legitimate users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-bar-chart text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Transparent Reporting</h3>
+                            <p class="text-gray-600">
+                                Detailed, easy-to-understand reports showing exactly how your budget is being spent and what results you're getting.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-users text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Certified Experts</h3>
+                            <p class="text-gray-600">
+                                Our team holds certifications from Google, Facebook, LinkedIn, and other major advertising platforms.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-exchange text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Cross-Device Tracking</h3>
+                            <p class="text-gray-600">
+                                Track customer journeys across desktops, tablets, and smartphones to understand the complete conversion path.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <i class="fa fa-dollar text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Cost Efficiency</h3>
+                            <p class="text-gray-600">
+                                Data-driven strategies that maximize your return on investment by focusing on high-performing channels and audiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertising Process -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Our Online Advertising Process</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+                    A proven 5-step process to create and manage successful online advertising campaigns
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white/20"></div>
+                
+                <div class="space-y-12 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Campaign Strategy & Planning</h3>
+                            <p class="text-gray-200">
+                                We define your advertising goals, identify your target audience, select the most effective platforms, and develop a comprehensive campaign strategy and budget.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            1
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            2
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Creative Development</h3>
+                            <p class="text-gray-200">
+                                Our creative team designs compelling ad creatives, writes persuasive copy, and develops landing pages optimized for conversions.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Campaign Launch</h3>
+                            <p class="text-gray-200">
+                                We set up and configure your advertising campaigns, implement tracking codes, and launch your ads across selected platforms.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            3
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            4
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <h3 class="text-2xl font-bold mb-2">Monitoring & Optimization</h3>
+                            <p class="text-gray-200">
+                                We continuously monitor campaign performance, analyze data, and make real-time adjustments to improve results and maximize ROI.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-2">Reporting & Analysis</h3>
+                            <p class="text-gray-200">
+                                We provide detailed performance reports, analyze campaign results, and provide strategic recommendations for future improvements.
+                            </p>
+                        </div>
+                        <div class="z-10 w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                            5
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-gray-900 mb-4">Online Advertising Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how our online advertising campaigns have delivered exceptional results for our clients
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Case 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/48/600/300" alt="Amazon Sales Growth" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">E-Commerce Advertising</span>
+                        <h3 class="text-xl font-bold mb-3">Amazon Store Revenue Doubling</h3>
+                        <p class="text-gray-600 mb-4">
+                            Implemented a comprehensive Amazon advertising strategy including Sponsored Products, Sponsored Brands, and Sponsored Display ads. Optimized product listings and implemented bid management strategies that resulted in doubling sales within 6 months.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">+100% Sales Growth</span>
+                            <span class="text-gray-500">6 Months</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                    <img src="https://picsum.photos/id/20/600/300" alt="B2B Lead Generation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4">B2B Lead Generation</span>
+                        <h3 class="text-xl font-bold mb-3">150% Increase in Qualified Leads</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed and executed a multi-platform B2B advertising campaign using Google Ads and LinkedIn Advertising. Implemented precise targeting and lead nurturing strategies that increased qualified leads by 150% while reducing cost per lead by 35%.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-secondary font-semibold">+150% Qualified Leads</span>
+                            <span class="text-gray-500">4 Months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">Ready to Maximize Your Online Advertising ROI?</h2>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">
+                Contact us today for a free advertising audit and let our experts create a customized campaign to grow your business.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md font-medium text-lg transition-all transform hover:scale-105">
+                Get Free Advertising Audit
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Fortu<span class="text-secondary">symbol</span></h3>
+                    <p class="text-gray-300 mb-4">
+                        Empowering global business growth through integrated marketing and trade solutions.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="advertising.html" class="text-gray-300 hover:text-white transition-colors">Advertising & Marketing</a></li>
+                        <li><a href="online-advertising.html" class="text-gray-300 hover:text-white transition-colors">Online Advertising</a></li>
+                        <li><a href="business-info.html" class="text-gray-300 hover:text-white transition-colors">Business Information</a></li>
+                        <li><a href="exhibitions.html" class="text-gray-300 hover:text-white transition-colors">Exhibition Organization</a></li>
+                        <li><a href="procurement.html" class="text-gray-300 hover:text-white transition-colors">Procurement Services</a></li>
+                        <li><a href="import-export.html" class="text-gray-300 hover:text-white transition-colors">Import & Export</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-map-marker mr-2"></i>
+                            <span class="text-gray-300">Building D, High-tech Industrial Park, Baoding</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-whatsapp mr-2"></i>
+                            <span class="text-gray-300">+86 15100288381</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-300">bella@qianguyi.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Fortusymbol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615100288381" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
